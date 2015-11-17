@@ -1,7 +1,7 @@
 The MIT License (MIT)
 
 Copyright (c) 2015 Milan Prucha
-[milanprucha.com](https://milanprucha.com) 
+<br>[milanprucha.com](https://milanprucha.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

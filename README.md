@@ -1,4 +1,6 @@
 # Stock Cube
+![Stock Cube](stock-cube.jpg)
+
 A quick Unity 'sketch', bringing stock quotes into virtual reality.
 
 The demo was created in Unity3d (Version 5.2.2.f1), and was built for the Oculus Rift DK2.

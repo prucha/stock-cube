@@ -3,7 +3,7 @@
 
 A quick Unity 'sketch', bringing stock quotes into virtual reality.
 
-The demo was created in Unity3d (Version 5.2.2.f1), running on a Windows 10 PC, with Oculus PC Runtime V.0.8.0.0-beta installed.
+The demo was created in Unity3d (Version 5.3.1f1), running on a Windows 10 PC, with Oculus PC Runtime V.0.8.0.0-beta installed.
 The app was built and tested on both Oculus Rift and Samsung Gear VR. 
 
 

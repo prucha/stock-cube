@@ -5,7 +5,7 @@ namespace StockCube
 {
 	public class FetchFinanceQuoteState : FetchQuoteState
 	{
-		public FetchFinanceQuoteState(Enum id, MonoBehaviour monoBehaviour) : base(id, monoBehaviour)
+		public FetchFinanceQuoteState(Enum id, IController controller) : base(id, controller)
 		{
 			this._jsonString = "GS,USB,BK,C,V,WFC,JPM,DB,FITB";
 			this._url = URL_PART_ONE + _jsonString + URL_PART_TWO;

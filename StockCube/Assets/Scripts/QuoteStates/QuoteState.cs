@@ -3,15 +3,15 @@ using System;
 
 namespace StockCube
 {
-	public class QuoteState : State
+	public abstract class QuoteState : State<Enum>
 	{
-		protected StateMachine		_stateMachine;
-		protected string			_nextStateId;
-		protected IController 	_main;
+		protected StateMachine<Enum>		_stateMachine;
+		protected string			        _nextStateId;
+		protected IController 	            _main;
 
-		public QuoteState(Enum id, MonoBehaviour monoBehaviour) : base(id, monoBehaviour)
+		public QuoteState(Enum id, IController controller) : base(id, controller.QuoteStateMachine)
 		{
-			this._main = monoBehaviour as IController;	
+			this._main = controller as IController;	
 			this._stateMachine = _main.QuoteStateMachine;
 		}
 	}

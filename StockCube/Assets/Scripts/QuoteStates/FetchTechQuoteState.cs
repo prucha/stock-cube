@@ -5,7 +5,7 @@ namespace StockCube
 {
 	public class FetchTechQuoteState : FetchQuoteState
 	{
-		public FetchTechQuoteState(Enum id, MonoBehaviour monoBehaviour) : base(id, monoBehaviour)
+		public FetchTechQuoteState(Enum id, IController controller) : base(id, controller)
 		{
 			this._jsonString = "YHOO,AAPL,GOOG,TWTR,FB,IBM,INTC,ARMH,HPQ";
 			this._url = URL_PART_ONE + _jsonString + URL_PART_TWO;

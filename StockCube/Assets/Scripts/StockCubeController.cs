@@ -23,7 +23,7 @@ namespace StockCube
         private GameObject      _stockCubeObj;
         private StockCube       _stockCube;
 
-        private StateMachine    _quoteStateMachine;
+        private StateMachine<Enum>    _quoteStateMachine;
         private List<Quote>     _stockQuotes;
 
         private Timer           _timer;
@@ -34,7 +34,7 @@ namespace StockCube
         // Accessors
         //-----------------------------------------------
 
-        public StateMachine QuoteStateMachine
+        public StateMachine<Enum> QuoteStateMachine
         {
             get { return _quoteStateMachine; }
         }
@@ -61,7 +61,7 @@ namespace StockCube
 
         void InitStateMachine()
         {
-            this._quoteStateMachine = new StateMachine();
+            this._quoteStateMachine = new StateMachine<Enum>();
 
             this._quoteStateMachine.AddState(new IdleState(QuoteStateId.IDLE, this));
             this._quoteStateMachine.AddState(new FetchTechQuoteState(QuoteStateId.FETCH_TECH_QUOTES, this));

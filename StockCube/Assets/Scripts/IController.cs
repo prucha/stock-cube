@@ -5,7 +5,7 @@ namespace StockCube
 {
 	public interface IController
 	{
-		StateMachine QuoteStateMachine 
+		StateMachine<Enum> QuoteStateMachine 
 		{
 			get;
 		}

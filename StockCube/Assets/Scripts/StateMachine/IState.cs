@@ -2,16 +2,14 @@ using System;
 
 namespace StockCube
 {
-    public interface IState
-    {
-        Enum ID
-        {
-            get;
-        }
+	public interface IState<T>
+	{
+		T ID { get; }
 
-        void Enter();
-        void Update();
-        void Exit();
-
-    }
+		void Enter();
+		void Update();
+		void Exit();
+	}
 }
+
+

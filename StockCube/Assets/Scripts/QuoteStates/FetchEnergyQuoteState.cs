@@ -5,7 +5,7 @@ namespace StockCube
 {
 	public class FetchEnergyQuoteState : FetchQuoteState
 	{
-		public FetchEnergyQuoteState(Enum id, MonoBehaviour monoBehaviour) : base(id, monoBehaviour)
+		public FetchEnergyQuoteState(Enum id, IController controller) : base(id, controller)
 		{
 			this._jsonString = "ATW,XOM,SDLP,NRP,ALDW,GASS,CVX,REGI,TEP";
 			this._url = URL_PART_ONE + _jsonString + URL_PART_TWO;

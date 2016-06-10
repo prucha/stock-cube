@@ -1,27 +1,31 @@
 using System;
-using UnityEngine;
 
 namespace StockCube
 {
-	public class State : IState
+	public abstract class State<T> : IState<T>
 	{
-        protected Enum _id;
-        protected MonoBehaviour _monoBehaviour;
-		
-		public Enum ID 
+        protected T _id;
+		protected IStateMachine<T> _stateMachine;
+
+		protected T _nextStateId;
+		protected T _backStateId;
+
+
+		public T ID 
 		{
 			get { return _id; }
 		}
-
-		public State(Enum id, MonoBehaviour monoBehaviour)
+		
+		public State(T id, IStateMachine<T> stateMachine)
 		{
 			this._id = id;
-			this._monoBehaviour = monoBehaviour;
+			this._stateMachine = stateMachine;
 		}
-		
-		public virtual void Enter() {}
-		public virtual void Update() {}
-		public virtual void Exit() {}
+
+        public abstract void Enter();
+        public abstract void Update();
+        public abstract void Exit();       
 	}
 }
+
 
